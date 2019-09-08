@@ -1,6 +1,11 @@
 
 export default {
   mode: 'spa',
+
+  router: {
+    base: '/lain-typing/'
+  },
+
   /*
   ** Headers of the page
   */
