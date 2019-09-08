@@ -5,7 +5,7 @@
         lain
       </h1>
       <h2 class="subtitle">
-        THE TYPING GAME
+        THE TYPING GAME!
       </h2>
       <div class="links">
         <a
