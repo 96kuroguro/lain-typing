@@ -16,16 +16,11 @@ export default {
         return {
 
         words: [
-            'egg',
-            'bag',
-            'rose',
-            'chair',
-            'bat',
-            'fish',
-            'notebook',
-            'pencil',
-            'dog',
-            'desk'
+            'serial',
+            'experiments',
+            'lain',
+            '岩倉',
+            '玲音'
         ],
         solvedWords: [],
 

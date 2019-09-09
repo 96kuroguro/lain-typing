@@ -8,18 +8,16 @@
         THE TYPING GAME!
       </h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
+        <nuxt-link to="/pc/play"
           class="button--green"
         >
           PC（キーボード入力）で遊ぶ
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
+        </nuxt-link>
+        <nuxt-link to="/sp/play"
           class="button--grey"
         >
           スマホ（フリック入力）で遊ぶ
-        </a>
+        </nuxt-link>
       </div>
     </div>
   </div>
