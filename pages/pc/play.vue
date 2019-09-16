@@ -1,10 +1,13 @@
 <template>
     <div class="container">
-        第{{ currentWordNumber }}問
-        <h1 v-text="currentWord"></h1>
-        <input id="input-typing" type="text" class="form-control" v-model="typingText">
-        {{typingText}}
-        {{solvedWords}}
+        <div>
+            <div class="d-block">第{{ currentWordNumber }}問</div>
+
+            <div class="d-block"><h1 v-text="currentWord"></h1></div>
+            <div class="d-block"><input id="input-typing" type="text" class="form-control" v-model="typingText"></div>
+            <div class="d-block">{{typingText}}
+            {{solvedWords}}</div>
+        </div>
     </div>
 </template>
 
@@ -49,6 +52,7 @@ export default {
         },
 
         isTypingCorrect() {
+            console.log(this.currentWord)
             if(this.typingText == this.currentWord) {
 
                 this.solvedWords.push(this.currentWord)
