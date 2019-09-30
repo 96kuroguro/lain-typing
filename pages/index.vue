@@ -13,11 +13,11 @@
         >
           PC（キーボード入力）で遊ぶ
         </nuxt-link>
-        <nuxt-link to="/sp/play"
+        <!-- <nuxt-link to="/sp/play"
           class="button--grey"
         >
           スマホ（フリック入力）で遊ぶ
-        </nuxt-link>
+        </nuxt-link> -->
       </div>
     </div>
   </div>
@@ -33,7 +33,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;
