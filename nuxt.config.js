@@ -1,17 +1,17 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/lain-typing/'
-  }
-} : {}
+// const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+//   router: {
+//     base: '/lain-typing/'
+//   }
+// } : {}
 
 export default {
-  ...routerBase,
+  // ...routerBase,
 
   mode: 'spa',
 
-  // router: {
-  //   base: '/lain-typing/'
-  // },
+  router: {
+    base: '/lain-typing/'
+  },
 
   /*
   ** Headers of the page
