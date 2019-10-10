@@ -1,16 +1,17 @@
-// const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-//   router: {
-//     base: '/lain-typing/'
-//   }
-// } : {}
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/lain-typing/'
+  }
+} : {}
 
 export default {
+  ...routerBase,
 
   mode: 'spa',
 
-  router: {
-    base: '/lain-typing/'
-  },
+  // router: {
+  //   base: '/lain-typing/'
+  // },
 
   /*
   ** Headers of the page
@@ -60,19 +61,7 @@ export default {
     ** You can extend webpack config here
     */
   //  analyze: true,
-    // extend (config, ctx) {
-    // }
-
-    splitChunks: {
-      layouts: true,
-      pages: true,
-      commons: true
-    },
-    extend (config, { isClient }) {
-      // クライアントのバンドルの Webpack 設定のみを拡張する
-      if (isClient) {
-        config.devtool = '#source-map'
-      }
+    extend (config, ctx) {
     }
 
   },
